@@ -1,4 +1,4 @@
-# aula 4
+# aula 6
 
 num1 = int(input('Digite um número:'))
 num2 = int(input('Digite outro número:'))
