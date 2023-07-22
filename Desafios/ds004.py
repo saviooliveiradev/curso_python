@@ -1,3 +1,4 @@
+# aula 6
 a = str(input('Digite algum: '))
 
 print(a.isnumeric())
