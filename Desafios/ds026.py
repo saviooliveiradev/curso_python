@@ -1,6 +1,6 @@
 # aula 9
 
-frase = str(input('Digite uma frase: ')).upper()
+frase = str(input('Digite uma frase: ')).upper().strip()
 
 print(f'A letrra A aparece {frase.count("A")} vezes na frase')
 print(f'A primeira letra A apareceu na posição {frase.find("A")+1}')
