@@ -1,8 +1,8 @@
 # aula 9
 
-nome = input('Digite seu nome: ')
+n = input('Digite seu nome completo: ').strip()
+nome = n.split()
 
-separado = nome.split()
-
-print(f'primeiro: {separado[0]}')
-print(f'ultimo: {separado.find()}')
+print('Muito prazer em te conhecer')
+print(f'Seu primeiro nome é {nome[0]}')
+print(f'Seu último nome é {nome[len(nome)-1]}')
