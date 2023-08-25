@@ -1,13 +1,13 @@
 # aula 12
 
-valor = float(input('Qual o valor da casa? '))
-salario = float(input('Quanto é o seu salário? '))
-pagar = int(input('Em quantos anos o senhor quer pagar? '))
+casa = int(input('Valor da casa: R$'))
+salario = int(input('Salário do comprador: R$'))
+anos = int(input('Quantos anos de financiamento? '))
 
-exceder = salario + (salario * 30 / 100)
-pagamento = valor / pagar 
+prestação = casa / (anos * 12)
+mínimo = salario * 30 / 100
 
-if pagamento >= exceder:
-    print('\033[31mCompra Negada!!!\033[m')
+if prestação <= mínimo:
+    print(f'Para pagar uma casa de R${casa} em {anos} a prestação será de R${prestação:.2f} \n EMPRÉSTIMO APROVADO!!!')
 else:
-    print('\033[32mCompra Aprovada!!!\033[m')
+    print(f'Para pagar uma casa de R${casa} em {anos} a prestação será de R${prestação:.2f} \n EMPRÉSTIMO NEGADO!!!')
