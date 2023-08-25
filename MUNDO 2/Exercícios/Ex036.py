@@ -10,4 +10,4 @@ mínimo = salario * 30 / 100
 if prestação <= mínimo:
     print(f'Para pagar uma casa de R${casa} em {anos} a prestação será de R${prestação:.2f} \n EMPRÉSTIMO APROVADO!!!')
 else:
-    print(f'Para pagar uma casa de R${casa} em {anos} a prestação será de R${prestação:.2f} \n EMPRÉSTIMO APROVADO!!!')
+    print(f'Para pagar uma casa de R${casa} em {anos} a prestação será de R${prestação:.2f} \n EMPRÉSTIMO NEGADO!!!')
