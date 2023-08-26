@@ -1,25 +1,59 @@
 # aula 12
 
-from random import choices
- 
-print('Vamos jogar pedra, papel ou tesoura!')
-print('-=-' * 20)
+from random import randint 
+from time import sleep
 
-lista = ['pedra', 'papel', 'teroura']
+itens = ( 'Pedra', 'Papel', 'Tesoura')
+computador = randint(0, 2) # randomizando 
 
-ler = str(input('Pedra, papel ou tesoura: '))
+# Escolhendo suas opções 
+print('''Suas opções:
+[ 0 ] PEDRA
+[ 1 ] PAPEL
+[ 2 ] TESOURA''')
 
-pc = print(choices(lista))
+jogador = int(input('Qual é a sua jogada: '))
 
-if ler == 'pedra' and pc == 'papel':
-    print('você perdeu!!!')
-elif ler == 'papel' and pc == 'tesoura':
-    print('você perdeu!!!')
-elif ler == 'tesoura' and pc =='pedra':
-    print('você perdeu!!!')
-elif pc == 'pedra' and ler == 'papel':
-    print('você ganhou!!!')
-elif pc == 'papel' and ler == 'tesoura':
-    print('você ganhou!!!')
-elif pc == 'tesoura' and ler == 'pedra':
-    print('você ganhou!!!')
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
+
+print('-=' * 11)
+print(f'Computador jogou {itens[computador]}')
+print(f'Jogador jogou {itens[jogador]}')
+print('-=' * 11)
+
+# computador jogou PEDRA
+if computador == 0:
+    if jogador == 0:
+        print('EMPATE')
+    elif jogador == 1:
+        print('JOGADOR VENCE')
+    elif jogador == 2:
+        print('JOGADOR PERDE')
+    else:
+        print('Jogada INVÁLIDA!!')
+
+# computador jogou PAPEL
+elif computador == 1:
+    if jogador == 0:
+        print('JOGADOR PERDE')
+    elif jogador == 1:
+        print('EMPATE')
+    elif jogador == 2:
+        print('JOGADOR VENCE')    
+    else:
+        print('Jogada INVÁLIDA!!')
+
+ # computador jogou TESOURA
+elif computador == 2:
+    if jogador == 0:
+        print('JOGADOR VENCE')
+    elif jogador == 1:
+        print('JOGADOR PERDE')
+    elif jogador == 2:
+        print('EMPATE')
+    else:
+        print('Jogada INVÁLIDA!!')
