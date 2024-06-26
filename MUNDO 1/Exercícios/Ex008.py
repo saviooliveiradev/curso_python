@@ -1,9 +1,8 @@
 # aula 7
 
-m = float(input('Escreva um valor em metros:'))
+m = float(input('Digite um valor em metros: '))
 
 cm = m * 100
-mm = m *1000
+mm = m * 1000
 
-
-print(f'Em centímetros é {cm}cm e milímetros tem {mm}mm')
+print(f'O valor {m} metros em centimetro é {cm:.2f} e milimetro é {mm:.2f}.')

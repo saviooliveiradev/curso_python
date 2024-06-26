@@ -1,9 +1,9 @@
 # aula 7
 
-n = int(input('Digite um núemro: '))
+n = int(input('Digite um número: '))
 
-d = n * 2 
+d = n * 2
 t = n * 3
 r = pow(n, (1/2))
 
-print(f'Seu dobro é {d}, seu triplo {t} e sua raiz quadrada é {r}')
+print(f'O dobro do número {n} é {d}, triplo {t} e a raiz quadrada {r:.2f}')
