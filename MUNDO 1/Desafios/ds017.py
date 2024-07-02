@@ -1,10 +1,9 @@
 # aula 8
+import math 
 
-from math import sqrt
+cat_aposto = float(input('Informe o comprimento do cateto aposto: '))
+cat_adjacente = float(input('Informe o comprimento do cateto adjacente: '))
 
-cat_oposto = float(input('Digite o comprimento do cateto oposto: '))
-cat_adjacente = float(input('Digite o comprimento do cateto adjacente: '))
+hipotenusa = math.hypot(cat_aposto, cat_adjacente)
 
-hipotenusa = sqrt(pow(cat_oposto, 2) + pow(cat_adjacente, 2)) 
-              
-print(f'Sua hiponetusa é {hipotenusa}')
+print(math.ceil(hipotenusa))

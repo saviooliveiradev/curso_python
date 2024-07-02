@@ -2,16 +2,12 @@
 
 from random import shuffle
 
-aluno1 = str(input('Nome do primeiro Aluno(A): '))
-aluno2 = str(input('Nome do primeiro Aluno(A): '))
-aluno3 = str(input('Nome do primeiro Aluno(A): '))
-aluno4 = str(input('Nome do primeiro Aluno(A): '))
+alu_1 = str(input('Digite seu nome: '))
+alu_2 = str(input('Digite seu nome: '))
+alu_3 = str(input('Digite seu nome: '))
+alu_4 = str(input('Digite seu nome: '))
 
-lista = [aluno1, aluno2, aluno3, aluno4]
+lista = [alu_1, alu_2, alu_3, alu_4]
 shuffle(lista)
 
-
-
-print('A ordem de apresentação será ')
-print(lista)
-
+print(f'A lista nova de alunos é {lista}')

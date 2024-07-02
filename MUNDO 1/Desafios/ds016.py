@@ -1,7 +1,7 @@
 # aula 8
 
 import math
+num = float(input('Digite um número: '))
 
-num1 = float(input('Digite um número: '))
 
-print(f'O número {num1} tem a parte inteira de {math.trunc(num1)}')
+print(f'O número {num} tem a parte inteira {math.trunc(num)}')
